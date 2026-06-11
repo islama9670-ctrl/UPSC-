@@ -1,0 +1,1062 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║     ██╗   ██╗██████╗ ███████╗ ██████╗     ██████╗███████╗███████╗            ║
+║     ██║   ██║██╔══██╗██╔════╝██╔════╝    ██╔════╝██╔════╝██╔════╝            ║
+║     ██║   ██║██████╔╝███████╗██║         ██║     ███████╗█████╗              ║
+║     ██║   ██║██╔═══╝ ╚════██║██║         ██║     ╚════██║██╔══╝              ║
+║     ╚██████╔╝██║     ███████║╚██████╗    ╚██████╗███████║███████╗            ║
+║      ╚═════╝ ╚═╝     ╚══════╝ ╚═════╝     ╚═════╝╚══════╝╚══════╝            ║
+║                                                                              ║
+║           🎓 ULTIMATE CIVIL SERVICES EXAMINATION PREPARATION HUB 🎓          ║
+║                                                                              ║
+║                    "One Platform. Every Resource. Your Success."             ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+You are an ELITE full-stack architect and UPSC CSE mentor with 15+ years of experience.
+Your mission: Build the SINGLE MOST COMPREHENSIVE, BEAUTIFUL, and FUNCTIONAL web platform
+for UPSC Civil Services Examination aspirants that has EVER EXISTED.
+
+This is NOT a prototype. This is NOT a demo. This is a REAL product that thousands
+of UPSC aspirants will use daily to prepare for India's toughest examination.
+
+═══════════════════════════════════════════════════════════════════════════════
+                              🎯 PROJECT IDENTITY
+═══════════════════════════════════════════════════════════════════════════════
+
+Project Name: "UPSC CSE Hub"
+Tagline: "One Platform. Every Resource. Your Success."
+Mission: Eliminate information overload. Curate excellence. Accelerate success.
+
+Target Users:
+├── Fresh aspirants (0-1 year preparation)
+├── Serious candidates (1-3 years preparation)
+├── Working professionals preparing part-time
+├── Hindi-medium students seeking bilingual resources
+├── Repeaters focusing on weak areas
+└── College students planning early start
+
+═══════════════════════════════════════════════════════════════════════════════
+                           🛠️ TECHNICAL ARCHITECTURE
+═══════════════════════════════════════════════════════════════════════════════
+
+CORE STACK (Non-Negotiable):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  Framework        │  Next.js 15 (App Router) + React 19                    │
+│  Language         │  TypeScript 5.3+ (Strict Mode, Zero 'any' types)       │
+│  Styling          │  Tailwind CSS 3.4+                                     │
+│  UI Components    │  Shadcn/ui (Latest)                                    │
+│  Icons            │  Lucide React (Latest)                                 │
+│  State Management │  React Context API + useReducer                        │
+│  Persistence      │  localStorage (User data only)                         │
+│  Data             │  Static JSON files (Zero backend dependency)           │
+│  Animation        │  Framer Motion (Page transitions, micro-interactions)  │
+│  Charts           │  Recharts (Analytics, progress tracking, cutoffs)        │
+│  Date Handling    │  date-fns                                              │
+│  Class Utils      │  clsx + tailwind-merge                                 │
+│  Drag & Drop      │  @dnd-kit/core + @dnd-kit/sortable                     │
+│  PDF Export       │  html2canvas + jspdf (for planner export)              │
+│  Copy to Clipboard│  navigator.clipboard API                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+REQUIRED SHADCN/UI COMPONENTS (Install ALL via CLI):
+npx shadcn add accordion alert alert-dialog avatar badge breadcrumb button 
+calendar card carousel checkbox collapsible command context-menu dialog drawer 
+dropdown-menu form hover-card input input-otp label menubar navigation-menu 
+pagination popover progress radio-group resizable scroll-area select separator 
+sheet skeleton slider sonner switch table tabs textarea toast toggle 
+toggle-group tooltip
+
+═══════════════════════════════════════════════════════════════════════════════
+                         📁 EXACT FOLDER STRUCTURE
+═══════════════════════════════════════════════════════════════════════════════
+
+Create EVERY file below. Do NOT skip any. Do NOT use placeholders. 
+Do NOT use "TODO" comments. Every file must be COMPLETE and FUNCTIONAL.
+
+upsc-cse-hub/
+├── 📂 app/                          # Next.js App Router
+│   ├── 📄 page.tsx                  # 🏠 HOME: Hero + Dashboard + Quick Access
+│   ├── 📄 layout.tsx                # 🎨 Root: Navbar, Footer, Providers, Metadata
+│   ├── 📄 globals.css               # 🎨 Global styles, CSS variables, animations
+│   ├── 📄 loading.tsx               # ⏳ Global loading skeleton with shimmer
+│   ├── 📄 not-found.tsx             # ❌ 404: Animated error page with navigation
+│   ├── 📄 error.tsx                 # 💥 Error boundary with retry functionality
+│   │
+│   ├── 📂 subjects/
+│   │   ├── 📄 page.tsx              # 📚 All 12 subjects in beautiful grid
+│   │   └── 📂 [slug]/
+│   │       └── 📄 page.tsx          # 📖 Individual subject: Syllabus, Books, PYQs, Videos
+│   │
+│   ├── 📂 resources/
+│   │   └── 📄 page.tsx              # 🔗 Curated resources with advanced filtering
+│   │
+│   ├── 📂 toppers/
+│   │   └── 📄 page.tsx              # 🏆 Topper strategies, interviews, notes
+│   │
+│   ├── 📂 current-affairs/
+│   │   └── 📄 page.tsx              # 📰 Daily/Monthly CA with smart tagging
+│   │
+│   ├── 📂 quiz/
+│   │   └── 📄 page.tsx              # 🧠 Interactive quiz with timer & analytics
+│   │
+│   ├── 📂 planner/
+│   │   └── 📄 page.tsx              # 📅 Drag-drop study planner with templates
+│   │
+│   ├── 📂 glossary/
+│   │   └── 📄 page.tsx              # 📖 120+ terms with search & bookmarks
+│   │
+│   ├── 📂 calculator/
+│   │   └── 📄 page.tsx              # 🧮 Prelims/Mains/Interview score predictor
+│   │
+│   ├── 📂 exam-info/
+│   │   └── 📄 page.tsx              # 📋 Complete exam guide with timeline
+│   │
+│   ├── 📂 answer-writing/
+│   │   └── 📄 page.tsx              # ✍️ Mains answer writing practice tool
+│   │
+│   ├── 📂 ncerts/
+│   │   └── 📄 page.tsx              # 📚 NCERT books library (Class 6-12)
+│   │
+│   ├── 📂 previous-year-papers/
+│   │   └── 📄 page.tsx              # 📄 PYQs organized by year and subject
+│   │
+│   ├── 📂 optional-subjects/
+│   │   └── 📄 page.tsx              # 📖 Optional subject guidance
+│   │
+│   ├── 📂 interview/
+│   │   └── 📄 page.tsx              # 🎤 Interview preparation resources
+│   │
+│   ├── 📂 motivation/
+│   │   └── 📄 page.tsx              # 💪 Daily motivation, quotes, success stories
+│   │
+│   └── 📂 about/
+│       └── 📄 page.tsx              # ℹ️ About platform, features, mission
+│
+├── 📂 components/                   # Reusable React components
+│   ├── 📂 ui/                       # Shadcn/ui components (auto-installed)
+│   │
+│   ├── 📄 Navbar.tsx                # 🧭 Responsive nav with search, theme, mobile menu
+│   ├── 📄 Footer.tsx                # 🦶 Comprehensive footer with links, newsletter
+│   ├── 📄 SearchBar.tsx             # 🔍 Global search: Cmd+K, fuzzy, categorized
+│   ├── 📄 ThemeToggle.tsx           # 🌓 Dark/Light/System mode toggle
+│   ├── 📄 MobileNav.tsx             # 📱 Bottom sheet navigation for mobile
+│   ├── 📄 Breadcrumb.tsx            # 🧭 Navigation breadcrumb
+│   ├── 📄 SectionHeader.tsx         # 📌 Consistent section heading
+│   ├── 📄 EmptyState.tsx            # 🫥 Empty state with illustration
+│   ├── 📄 ErrorState.tsx            # ⚠️ Error state with retry
+│   ├── 📄 LoadingCard.tsx           # 💫 Card skeleton loader
+│   ├── 📄 BackToTop.tsx             # ⬆️ Floating back-to-top button
+│   ├── 📄 ScrollProgress.tsx        # 📏 Reading progress indicator
+│   ├── 📄 StickyNote.tsx            # 📝 Floating sticky note component
+│   │
+│   ├── 📄 HeroSection.tsx           # 🎬 Animated hero with gradient, particles, CTA
+│   ├── 📄 StatsCounter.tsx          # 📊 Animated counting statistics
+│   ├── 📄 QuickLinks.tsx            # ⚡ 6-card quick access grid with hover effects
+│   ├── 📄 FeatureShowcase.tsx       # ✨ Feature highlights with icons
+│   ├── 📄 TestimonialCarousel.tsx   # 💬 Success stories carousel
+│   ├── 📄 ExamCountdown.tsx         # ⏰ Live countdown to next Prelims
+│   ├── 📄 DailyQuote.tsx            # 💭 Motivational quote rotator
+│   ├── 📄 NewsTicker.tsx            # 📰 Horizontal scrolling news ticker
+│   │
+│   ├── 📄 SubjectCard.tsx           # 📚 Subject preview with icon, color, weightage
+│   ├── 📄 SubjectDetail.tsx         # 📖 Subject tabs: Syllabus, Books, Videos, PYQs
+│   ├── 📄 SyllabusAccordion.tsx     # 📋 Expandable micro-syllabus topics
+│   ├── 📄 BookCard.tsx              # 📕 Book with cover, author, links
+│   ├── 📄 VideoCard.tsx             # ▶️ YouTube playlist card
+│   ├── 📄 PYQTable.tsx              # 📄 Previous year questions table
+│   ├── 📄 NCERTCard.tsx             # 📚 NCERT book card with class/subject
+│   │
+│   ├── 📄 ResourceCard.tsx          # 🔗 Resource card with type badge, rating
+│   ├── 📄 ResourceFilter.tsx        # 🔽 Advanced filter sidebar
+│   │
+│   ├── 📄 TopperCard.tsx            # 🏆 Topper profile with rank, year
+│   ├── 📄 TopperStrategy.tsx        # 📋 Expandable strategy sections
+│   │
+│   ├── 📄 CurrentAffairCard.tsx     # 📰 CA card with date, importance, tags
+│   ├── 📄 CAFilterBar.tsx           # 🏷️ Date range + subject filters
+│   │
+│   ├── 📄 QuizStartScreen.tsx       # 🎯 Quiz configuration screen
+│   ├── 📄 QuizQuestion.tsx          # ❓ Question card with options, timer
+│   ├── 📄 QuizProgress.tsx          # 📊 Progress bar + question navigator
+│   ├── 📄 QuizResults.tsx           # 🏅 Results with score, charts, review
+│   ├── 📄 QuizReview.tsx            # 🔍 Answer review with explanations
+│   ├── 📄 QuizHistory.tsx           # 📈 Past quiz attempts list
+│   │
+│   ├── 📄 StudyPlanner.tsx          # 📅 Weekly calendar with drag-drop
+│   ├── 📄 PlannerSlot.tsx           # ⏰ Individual time slot component
+│   ├── 📄 PlannerModal.tsx          # ➕ Add/edit session modal
+│   ├── 📄 PlannerTemplateSelector.tsx # 📋 Pre-built planner templates
+│   ├── 📄 PlannerProgress.tsx       # 📈 Weekly completion progress
+│   │
+│   ├── 📄 GlossaryCard.tsx          # 📖 Term card with definition
+│   ├── 📄 GlossarySearch.tsx        # 🔤 A-Z index + search bar
+│   ├── 📄 GlossaryBookmarks.tsx   # ⭐ Bookmarked terms section
+│   │
+│   ├── 📄 CalculatorPrelims.tsx     # 🧮 Prelims score calculator
+│   ├── 📄 CalculatorMains.tsx       # 🧮 Mains score calculator
+│   ├── 📄 CalculatorInterview.tsx   # 🧮 Interview score calculator
+│   ├── 📄 CalculatorAttempts.tsx    # 🧮 Attempts left calculator
+│   │
+│   ├── 📄 ExamTimeline.tsx          # 📅 Visual horizontal timeline
+│   ├── 📄 EligibilityChecker.tsx    # ✅ Interactive eligibility form
+│   ├── 📄 CutoffChart.tsx           # 📊 Previous year cutoff chart
+│   ├── 📄 SyllabusViewer.tsx        # 📋 Full syllabus with search
+│   │
+│   ├── 📄 AnswerWritingTool.tsx     # ✍️ Practice answer writing
+│   ├── 📄 AnswerReview.tsx          # 👁️ Self-review checklist
+│   │
+│   ├── 📄 InterviewTips.tsx         # 🎤 Interview preparation tips
+│   ├── 📄 DAFAnalysis.tsx           # 📋 Detailed Application Form guide
+│   ├── 📄 MockInterviewCard.tsx     # 🎭 Mock interview resources
+│   │
+│   └── 📄 OptionalSubjectGuide.tsx  # 📖 Optional subject selection guide
+│
+├── 📂 data/                         # ALL STATIC DATA (JSON files)
+│   ├── 📄 subjects.json             # 12 subjects with FULL micro-syllabus
+│   ├── 📄 resources.json            # 60+ curated resources
+│   ├── 📄 toppers.json              # 10 toppers with complete strategies
+│   ├── 📄 current_affairs.json      # 50+ current affairs entries
+│   ├── 📄 quizzes.json              # 60+ quiz questions
+│   ├── 📄 glossary.json             # 120+ UPSC terms
+│   ├── 📄 exam_info.json            # Complete exam structure
+│   ├── 📄 government_sites.json     # 20 official government websites
+│   ├── 📄 youtube_channels.json     # 15 YouTube channels
+│   ├── 📄 books.json                # 30 standard books with details
+│   ├── 📄 pyqs.json                 # 50 PYQ references
+│   ├── 📄 quotes.json               # 30 motivational quotes
+│   ├── 📄 ncerts.json               # NCERT books (Class 6-12, all subjects)
+│   ├── 📄 optional_subjects.json    # 26 optional subjects with guidance
+│   ├── 📄 interview_resources.json  # Interview preparation materials
+│   ├── 📄 answer_writing_tips.json  # Answer writing strategies
+│   ├── 📄 daily_quiz_schedule.json  # Quiz rotation schedule
+│   └── 📄 success_stories.json      # 15 success stories
+│
+├── 📂 lib/                          # Utility functions & logic
+│   ├── 📄 utils.ts                  # cn() helper, formatters, validators
+│   ├── 📄 search.ts                 # 🔍 Global fuzzy search engine
+│   ├── 📄 quiz-context.tsx          # 🧠 Quiz state management
+│   ├── 📄 planner-context.tsx       # 📅 Planner state management
+│   ├── 📄 glossary-context.tsx      # 📖 Glossary bookmarks management
+│   ├── 📄 theme-provider.tsx        # 🌓 Next-themes provider wrapper
+│   ├── 📄 animations.ts             # 🎬 Framer Motion variants
+│   └── 📄 constants.ts              # App constants (subjects, categories)
+│
+├── 📂 types/                        # TypeScript type definitions
+│   └── 📄 index.ts                  # ALL interfaces and types
+│
+├── 📂 hooks/                        # Custom React hooks
+│   ├── 📄 useLocalStorage.ts        # 💾 localStorage with SSR safety
+│   ├── 📄 useQuiz.ts                # 🧠 Quiz hook
+│   ├── 📄 useSearch.ts              # 🔍 Search hook
+│   ├── 📄 useMediaQuery.ts          # 📱 Responsive breakpoint hook
+│   ├── 📄 useCountdown.ts           # ⏰ Countdown timer hook
+│   ├── 📄 useDebounce.ts            # ⏱️ Debounce hook for search
+│   └── 📄 useScrollPosition.ts      # 📜 Scroll position tracking
+│
+├── 📂 public/                       # Static assets
+│   ├── 📂 images/                   # Placeholder images, icons
+│   └── 📄 favicon.ico               # Custom favicon
+│
+├── 📄 next.config.js                # Next.js config (static export)
+├── 📄 tailwind.config.ts            # Tailwind with custom theme
+├── 📄 tsconfig.json                 # TypeScript strict config
+├── 📄 package.json                  # All dependencies
+├── 📄 vercel.json                   # Vercel deployment config
+├── 📄 .eslintrc.json                # ESLint config
+├── 📄 .prettierrc                   # Prettier config
+├── 📄 components.json                 # Shadcn/ui config
+└── 📄 README.md                     # 📖 COMPLETE documentation
+
+═══════════════════════════════════════════════════════════════════════════════
+                         🎨 DESIGN SYSTEM — PREMIUM UI
+═══════════════════════════════════════════════════════════════════════════════
+
+COLOR PALETTE (Use EXACT Tailwind classes):
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  Role              │  Light Mode              │  Dark Mode                  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  Primary           │  bg-indigo-600           │  bg-indigo-500              │
+│  Primary Hover     │  bg-indigo-700           │  bg-indigo-400              │
+│  Primary Text      │  text-indigo-600         │  text-indigo-400            │
+│  Primary Light     │  bg-indigo-50            │  bg-indigo-950/30           │
+│  Secondary         │  bg-emerald-500          │  bg-emerald-500             │
+│  Secondary Text    │  text-emerald-600        │  text-emerald-400           │
+│  Accent            │  bg-amber-500            │  bg-amber-500               │
+│  Accent Text       │  text-amber-600          │  text-amber-400             │
+│  Background        │  bg-slate-50             │  bg-slate-950               │
+│  Card Background   │  bg-white                │  bg-slate-900               │
+│  Card Border       │  border-slate-200        │  border-slate-800           │
+│  Text Primary      │  text-slate-900          │  text-slate-100             │
+│  Text Secondary    │  text-slate-500          │  text-slate-400             │
+│  Text Muted        │  text-slate-400          │  text-slate-500             │
+│  Success           │  text-emerald-600        │  text-emerald-400           │
+│  Success BG        │  bg-emerald-50           │  bg-emerald-950/30          │
+│  Error             │  text-red-600            │  text-red-400               │
+│  Error BG          │  bg-red-50               │  bg-red-950/30              │
+│  Warning           │  text-amber-600          │  text-amber-400             │
+│  Info              │  text-blue-600           │  text-blue-400              │
+│  Gradient Start    │  from-indigo-600         │  from-indigo-500            │
+│  Gradient End      │  to-purple-600           │  to-purple-500              │
+│  Gradient Accent   │  from-emerald-500        │  from-emerald-500           │
+│                     │  to-teal-500             │  to-teal-500                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+TYPOGRAPHY SCALE:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  Element           │  Size        │  Weight    │  Line Height               │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  Display/Hero      │  text-5xl    │  font-bold │  leading-tight             │
+│  H1 (Page Title)   │  text-4xl    │  font-bold │  leading-tight             │
+│  H2 (Section)      │  text-3xl    │  font-bold │  leading-snug              │
+│  H3 (Card Title)   │  text-xl     │  font-semibold│  leading-snug           │
+│  H4 (Subtitle)     │  text-lg     │  font-semibold│  leading-snug           │
+│  Body              │  text-base   │  font-normal│  leading-relaxed          │
+│  Small/Caption     │  text-sm     │  font-medium│  leading-normal           │
+│  Tiny              │  text-xs     │  font-medium│  leading-normal           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+SPACING SYSTEM:
+- Section padding: py-16 lg:py-24
+- Content max-width: max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+- Card gap: gap-6
+- Card padding: p-6
+- Element gap within cards: space-y-4
+
+BORDER RADIUS:
+- Cards: rounded-2xl
+- Buttons: rounded-lg (small), rounded-xl (large CTA)
+- Inputs: rounded-lg
+- Badges: rounded-full
+- Images: rounded-xl
+- Modals: rounded-2xl
+
+SHADOWS:
+- Cards: shadow-sm hover:shadow-lg transition-shadow duration-300
+- Elevated: shadow-md
+- Modal: shadow-2xl
+- Sticky: shadow-lg
+
+ANIMATIONS (Framer Motion):
+- Page entrance: opacity 0→1, y: 20→0, duration: 0.5s, ease: "easeOut"
+- Card hover: scale: 1→1.02, duration: 0.2s
+- Stagger children: staggerChildren: 0.1
+- Skeleton shimmer: background gradient animation
+- Count up: duration 2s, ease: "easeOut"
+- Modal: scale: 0.95→1, opacity: 0→1, duration: 0.2s
+- Toast: slide in from bottom-right, duration: 0.3s
+
+═══════════════════════════════════════════════════════════════════════════════
+                      📊 DATA FILES — COMPLETE & REALISTIC
+═══════════════════════════════════════════════════════════════════════════════
+
+EVERY JSON file must contain REAL, ACCURATE, USEFUL data. NO placeholders.
+NO "Lorem ipsum". NO fake URLs. Use actual working links where possible.
+Minimum entries per file specified below.
+
+═══════════════════════════════════════════════════════════════════════════════
+FILE: data/subjects.json — 12 COMPLETE SUBJECTS (Minimum 12 entries)
+═══════════════════════════════════════════════════════════════════════════════
+
+Structure per subject:
+{
+  "id": "history",
+  "name": "History",
+  "nameHindi": "इतिहास",
+  "icon": "Landmark",
+  "color": "amber",
+  "description": "Comprehensive coverage of Indian and World History from ancient civilizations to modern independence movements.",
+  "weightage": {
+    "prelims": 15,
+    "mains": 150,
+    "essay": 50
+  },
+  "gsPaper": "GS Paper 1",
+  "difficulty": "medium",
+  "timeRequired": "4-5 months",
+  "priority": "high",
+  "microSyllabus": [
+    {
+      "category": "Ancient India",
+      "topics": [
+        "Prehistoric cultures: Paleolithic, Mesolithic, Neolithic, Chalcolithic",
+        "Indus Valley Civilization: Origin, extent, town planning, art, decline",
+        "Vedic Period: Early and Later Vedic society, religion, literature",
+        "Mahajanapadas and Rise of Magadha",
+        "Buddhism and Jainism: Teachings, spread, impact",
+        "Mauryan Empire: Chandragupta, Ashoka, administration, edicts",
+        "Post-Mauryan period: Sungas, Satavahanas, Kushanas",
+        "Gupta Empire: Golden age, administration, culture, science",
+        "Regional kingdoms: Cholas, Cheras, Pandyas, Pallavas",
+        "Sangam literature and society"
+      ]
+    },
+    {
+      "category": "Medieval India",
+      "topics": [
+        "Delhi Sultanate: Slave, Khalji, Tughlaq, Sayyid, Lodi dynasties",
+        "Vijayanagara and Bahmani kingdoms",
+        "Bhakti and Sufi movements",
+        "Mughal Empire: Babur to Aurangzeb, administration, culture",
+        "Maratha Empire: Shivaji, Peshwas, administration",
+        "Regional states: Rajputs, Sikhs, Jats",
+        "Art and architecture: Indo-Islamic styles"
+      ]
+    },
+    {
+      "category": "Modern India",
+      "topics": [
+        "Advent of Europeans: Portuguese, Dutch, English, French",
+        "British expansion: Bengal, Mysore, Marathas, Punjab",
+        "Economic impact of British rule: Deindustrialization, agriculture",
+        "Social reforms: Raja Ram Mohan Roy, Ishwar Chandra Vidyasagar",
+        "1857 Revolt: Causes, nature, consequences",
+        "Indian National Congress: Formation, early moderates",
+        "Extremist phase: Tilak, Lajpat Rai, Bipin Chandra Pal",
+        "Gandhian era: Non-cooperation, Civil Disobedience, Quit India",
+        "Revolutionary movements: HSRA, INA",
+        "Constitutional developments: Morley-Minto, Montagu-Chelmsford, Government of India Act 1935",
+        "Partition and Independence",
+        "Post-Independence consolidation and reorganization"
+      ]
+    },
+    {
+      "category": "World History",
+      "topics": [
+        "Renaissance and Reformation",
+        "Industrial Revolution",
+        "American and French Revolutions",
+        "Nationalism in Europe: Unification of Italy and Germany",
+        "Imperialism and Colonialism",
+        "World War I: Causes, consequences, Treaty of Versailles",
+        "Russian Revolution",
+        "Inter-war period: Great Depression, rise of Fascism and Nazism",
+        "World War II: Causes, major events, consequences",
+        "Decolonization: India, Africa, Southeast Asia",
+        "Cold War: Bipolar world, NATO, Warsaw Pact",
+        "Non-Aligned Movement",
+        "Globalization and contemporary world"
+      ]
+    }
+  ],
+  "standardBooks": [
+    {
+      "title": "Indian Art and Culture",
+      "author": "Nitin Singhania",
+      "publisher": "McGraw Hill",
+      "description": "Comprehensive coverage of art, culture, architecture, and heritage for GS Paper 1",
+      "priority": "essential",
+      "pdfUrl": null,
+      "purchaseUrl": "https://www.amazon.in/Indian-Art-Culture-Nitin-Singhania/dp/9355320697",
+      "pages": 600,
+      "language": "english"
+    },
+    {
+      "title": "India's Ancient Past",
+      "author": "R.S. Sharma",
+      "publisher": "Oxford University Press",
+      "description": "Standard reference for Ancient Indian History",
+      "priority": "essential",
+      "pdfUrl": null,
+      "purchaseUrl": "https://www.amazon.in/Indias-Ancient-Past-R-S-Sharma/dp/019568785X",
+      "pages": 380,
+      "language": "english"
+    },
+    {
+      "title": "History of Medieval India",
+      "author": "Satish Chandra",
+      "publisher": "Orient BlackSwan",
+      "description": "Comprehensive coverage of Medieval Indian history",
+      "priority": "essential",
+      "pdfUrl": null,
+      "purchaseUrl": "https://www.amazon.in/History-Medieval-India-Satish-Chandra/dp/8125032266",
+      "pages": 420,
+      "language": "english"
+    },
+    {
+      "title": "A Brief History of Modern India",
+      "author": "Spectrum Editorial Team",
+      "publisher": "Spectrum Books",
+      "description": "Most popular book for Modern Indian History, concise and exam-oriented",
+      "priority": "essential",
+      "pdfUrl": null,
+      "purchaseUrl": "https://www.amazon.in/Brief-History-Modern-India-Spectrum/dp/8179306467",
+      "pages": 850,
+      "language": "english"
+    },
+    {
+      "title": "India's Struggle for Independence",
+      "author": "Bipan Chandra",
+      "publisher": "Penguin Books",
+      "description": "Detailed account of freedom struggle with analytical approach",
+      "priority": "recommended",
+      "pdfUrl": null,
+      "purchaseUrl": "https://www.amazon.in/Indias-Struggle-Independence-Bipan-Chandra/dp/0143038583",
+      "pages": 600,
+      "language": "english"
+    }
+  ],
+  "youtubePlaylists": [
+    {
+      "title": "Complete Ancient History",
+      "channel": "StudyIQ IAS",
+      "url": "https://www.youtube.com/playlist?list=PLwYR7WJw1-QX7fA1Z7Z7Z7Z7Z7Z7Z7Z7",
+      "description": "Comprehensive Ancient History lectures for UPSC",
+      "videoCount": 45,
+      "language": "hindi"
+    },
+    {
+      "title": "Modern Indian History",
+      "channel": "SleepyClasses",
+      "url": "https://www.youtube.com/playlist?list=PLwYR7WJw1-QX7fA1Z7Z7Z7Z7Z7Z7Z7Z7",
+      "description": "Detailed Modern History coverage with PYQ analysis",
+      "videoCount": 60,
+      "language": "english"
+    }
+  ],
+  "pyqs": [
+    { "year": 2024, "paper": "GS1", "url": "https://upsc.gov.in/sites/default/files/QP-IAS-MAIN-2024-GS1.pdf" },
+    { "year": 2023, "paper": "GS1", "url": "https://upsc.gov.in/sites/default/files/QP-IAS-MAIN-2023-GS1.pdf" },
+    { "year": 2022, "paper": "GS1", "url": "https://upsc.gov.in/sites/default/files/QP-IAS-MAIN-2022-GS1.pdf" },
+    { "year": 2021, "paper": "GS1", "url": "https://upsc.gov.in/sites/default/files/QP-IAS-MAIN-2021-GS1.pdf" },
+    { "year": 2020, "paper": "GS1", "url": "https://upsc.gov.in/sites/default/files/QP-IAS-MAIN-2020-GS1.pdf" }
+  ],
+  "currentAffairsIntegration": "Focus on historical anniversaries, new archaeological discoveries, UNESCO heritage site inscriptions, and government schemes named after historical figures. Connect ancient practices with modern initiatives like Yoga Day, Ayurveda promotion.",
+  "tips": [
+    "Make timeline charts for all major events",
+    "Focus on cause-effect relationships rather than rote memorization",
+    "Practice map-based questions for ancient and medieval sites",
+    "Connect history with Art & Culture for integrated answers",
+    "Use Spectrum for Modern India and NCERT for Ancient/Medieval"
+  ],
+  "commonMistakes": [
+    "Rote memorization without understanding context",
+    "Ignoring Art & Culture overlap",
+    "Not connecting history with current affairs"
+  ]
+}
+
+REPEAT this structure for ALL 12 subjects:
+
+1. HISTORY — icon: "Landmark", color: "amber", gsPaper: "GS Paper 1"
+   Categories: Ancient India, Medieval India, Modern India, World History
+
+2. GEOGRAPHY — icon: "Globe", color: "emerald", gsPaper: "GS Paper 1"
+   Categories: Physical Geography, Human Geography, Indian Geography, World Geography
+
+3. POLITY — icon: "Scale", color: "blue", gsPaper: "GS Paper 2"
+   Categories: Constitution, Governance, Parliament, Judiciary, Federalism, Local Government
+
+4. ECONOMY — icon: "TrendingUp", color: "green", gsPaper: "GS Paper 3"
+   Categories: Basic Concepts, Indian Economy, Planning & Development, Banking, Budget, International Trade
+
+5. SOCIETY — icon: "Users", color: "rose", gsPaper: "GS Paper 1"
+   Categories: Social Structure, Diversity, Women, Caste, Religion, Urbanization
+
+6. SCIENCE & TECHNOLOGY — icon: "Cpu", color: "cyan", gsPaper: "GS Paper 3"
+   Categories: General Science, IT & Computers, Space, Biotechnology, Nanotechnology, Defence
+
+7. ENVIRONMENT & ECOLOGY — icon: "Leaf", color: "green", gsPaper: "GS Paper 3"
+   Categories: Ecology Basics, Biodiversity, Climate Change, Conservation, Pollution, International Conventions
+
+8. INTERNAL SECURITY — icon: "Shield", color: "red", gsPaper: "GS Paper 3"
+   Categories: Extremism, Terrorism, Cyber Security, Border Management, Intelligence Agencies, Organized Crime
+
+9. ETHICS — icon: "Heart", color: "purple", gsPaper: "GS Paper 4"
+   Categories: Ethics Basics, Moral Thinkers, Attitude, Emotional Intelligence, Integrity, Aptitude, Case Studies
+
+10. INTERNATIONAL RELATIONS — icon: "Globe2", color: "indigo", gsPaper: "GS Paper 2"
+    Categories: Foreign Policy, Neighbourhood, Global Groupings, Diaspora, International Organizations
+
+11. ART & CULTURE — icon: "Palette", color: "orange", gsPaper: "GS Paper 1"
+    Categories: Architecture, Literature, Music, Dance, Fairs & Festivals, Handicrafts, Paintings
+
+12. CSAT — icon: "Brain", color: "slate", gsPaper: "Qualifying"
+    Categories: Comprehension, Logical Reasoning, Quantitative Aptitude, Decision Making, Data Interpretation
+
+Each subject MUST have:
+- 4-6 micro-syllabus categories with 8-12 topics each
+- 4-6 standard books with real authors, publishers, and purchase links
+- 2-4 YouTube playlists with real channels
+- 5+ PYQ links (2020-2024)
+- Current affairs integration tips
+- 5 study tips
+- 3 common mistakes to avoid
+
+═══════════════════════════════════════════════════════════════════════════════
+FILE: data/resources.json — 60+ CURATED RESOURCES (Minimum 60 entries)
+═══════════════════════════════════════════════════════════════════════════════
+
+Structure:
+{
+  "id": "upsc-official",
+  "name": "UPSC Official Website",
+  "url": "https://upsc.gov.in",
+  "description": "Official notifications, syllabus, results, and all examination-related information. The primary source for all UPSC updates.",
+  "subject": "General",
+  "type": "website",
+  "category": "Official",
+  "rating": 5,
+  "tags": ["official", "notifications", "syllabus", "results", "free", "must-follow"],
+  "isOfficial": true,
+  "language": "english",
+  "lastUpdated": "2024-01-15",
+  "frequency": "daily"
+}
+
+MUST INCLUDE (Minimum 60 resources across these categories):
+
+OFFICIAL WEBSITES (15):
+├── upsc.gov.in — Official UPSC portal
+├── pib.gov.in — Press Information Bureau
+├── prsindia.org — PRS Legislative Research
+├── rbi.org.in — Reserve Bank of India
+├── indiabudget.gov.in — Union Budget
+├── niti.gov.in — NITI Aayog
+├── censusindia.gov.in — Census data
+├── moes.gov.in — Ministry of Earth Sciences
+├── meity.gov.in — Ministry of Electronics & IT
+├── indiacode.nic.in — India Code (all laws)
+├── publications.gov.in — Yojana & Kurukshetra
+├── sansadtv.nic.in — Sansad TV
+├── ilo.org — International Labour Organization
+├── wto.org — World Trade Organization
+└── undp.org — UNDP Human Development Reports
+
+EDUCATIONAL WEBSITES (20):
+├── mrunal.org — Economy videos and articles
+├── insightsonindia.com — Current affairs, test series
+├── forumias.com — Forum IAS community
+├── civilsdaily.com — Daily news analysis
+├── visionias.in — Monthly current affairs
+├── iasbaba.com — Integrated learning
+├── clearias.com — Study materials and strategies
+├── gktoday.in — Static GK and quizzes
+├── drishtiias.com — Hindi/English materials
+├── byjus.com/free-ias-prep — Free IAS prep
+├── unacademy.com — Free videos by educators
+├── khanacademy.org — Basic concepts
+├── iasscore.in — Score-oriented preparation
+├── examrace.com — Free study material
+├── xaam.in — Current affairs compilation
+├── iasparliament.com — Daily current affairs
+├── onlyiasexam.com — Exam-focused content
+├── iasexamportal.com — Comprehensive portal
+├── jagranjosh.com — Current affairs and GK
+└── testbook.com — Free tests and quizzes
+
+YOUTUBE CHANNELS (15):
+├── Study IQ Education — General studies
+├── Unacademy UPSC — Comprehensive courses
+├── Sansad TV — Parliamentary debates
+├── Amit Sengupta — Geography
+├── Roman Saini — Ethics, CSAT
+├── Shubhra Ranjan — PSIR, Ethics
+├── Harshit Dwivedi — Geography, Environment
+├── SleepyClasses — Polity, History
+├── Adarsh Gupta — Current affairs
+├── Vikas Divyakirti (Drishti) — Hindi medium
+├── Only IAS — Current affairs
+├── Study Glow — Motivation and strategy
+├── Khan GS Research Centre — Hindi medium
+├── Rau's IAS — Interview preparation
+└── Vajiram & Ravi — Classroom videos
+
+APPS & TOOLS (5):
+├── Prepp.in — Current affairs app
+├── Civilsdaily App — Daily news
+├── VisionIAS App — Test series
+├── Unacademy App — Video courses
+└── BYJU'S IAS App — Learning app
+
+BLOGS & PDFs (5):
+├── IASBaba TLP — Mains answer writing
+├── Insight Secure — Daily secure compilation
+├── ForumIAS 9PM Brief — Daily brief
+├── VisionIAS Monthly Magazine — PDF
+└── Yojana Magazine PDF — Monthly
+
+═══════════════════════════════════════════════════════════════════════════════
+FILE: data/toppers.json — 10 TOPPERS WITH FULL STRATEGIES (Minimum 10 entries)
+═══════════════════════════════════════════════════════════════════════════════
+
+Structure:
+{
+  "id": "anudeep-durishetty",
+  "name": "Anudeep Durishetty",
+  "rank": 1,
+  "year": 2017,
+  "optional": "Anthropology",
+  "optionalMarks": 318,
+  "gsMarks": 950,
+  "essayMarks": 155,
+  "interviewMarks": 176,
+  "totalMarks": 1126,
+  "state": "Telangana",
+  "education": "B.Tech from BITS Pilani",
+  "attempts": 5,
+  "age": 28,
+  "category": "General",
+  "strategy": [
+    {
+      "title": "Prelims Strategy",
+      "category": "prelims",
+      "content": "Focused on NCERTs for basics and current affairs for dynamic portion. Solved 50+ test series before exam. Maintained error notebook for all wrong answers. Revised entire syllabus 3 times before Prelims.",
+      "tips": ["Solve minimum 50 tests", "Revise error notebook weekly", "Focus on CSAT from Day 1", "Don't ignore CSAT - it's qualifying but crucial"]
+    },
+    {
+      "title": "Mains Answer Writing",
+      "category": "mains",
+      "content": "Wrote 2 answers daily from Insights or IASBaba. Focused on structure: Introduction-Body-Conclusion. Used diagrams and flowcharts extensively. Got answers evaluated regularly.",
+      "tips": ["Write daily without fail", "Get answers evaluated", "Focus on presentation", "Use diagrams for 2-3 marks boost"]
+    },
+    {
+      "title": "Anthropology Optional",
+      "category": "optional",
+      "content": "Chose Anthropology for its scoring potential and overlap with GS. Used Thinkers and Tribal India extensively. Made own notes for Paper 2. Focused on case studies from newspapers.",
+      "tips": ["Diagrams are scoring", "Case studies from newspapers", "Focus on applied anthropology", "Make concise notes for revision"]
+    },
+    {
+      "title": "Interview Preparation",
+      "category": "interview",
+      "content": "Prepared detailed DAF analysis. Mock interviews at multiple institutes. Focused on hobbies and home state. Read newspaper on interview day for current topics.",
+      "tips": ["Know your DAF thoroughly", "Be honest, not rehearsed", "Read newspaper on interview day", "Practice 10+ mock interviews"]
+    },
+    {
+      "title": "General Advice",
+      "category": "general",
+      "content": "Consistency is key. It's a marathon, not a sprint. Believe in the process even when results don't show immediately. Took 5 attempts - never gave up.",
+      "tips": ["Don't compare with others", "Take breaks to avoid burnout", "Stay updated with current affairs", "Believe in yourself"]
+    }
+  ],
+  "blogUrl": "https://anudeepdurishetty.blogspot.com",
+  "interviewUrl": "https://www.youtube.com/watch?v=example",
+  "notesUrl": "https://drive.google.com/drive/folders/example",
+  "quote": "The only way to do great work is to love what you do. UPSC is not just an exam, it's a journey of self-discovery.",
+  "image": null,
+  "socialMedia": {
+    "twitter": "@anudeepdurishetty",
+    "instagram": null,
+    "linkedin": "anudeep-durishetty"
+  }
+}
+
+TOPPERS TO INCLUDE:
+1. Anudeep Durishetty — AIR 1, 2017, Anthropology, Telangana, BITS Pilani
+2. Shruti Sharma — AIR 1, 2021, History, Uttar Pradesh, St. Stephen's
+3. Kanishak Kataria — AIR 1, 2018, Mathematics, Rajasthan, IIT Bombay
+4. Apala Mishra — AIR 9, 2020, Anthropology, Uttar Pradesh, JNU
+5. Gaurav Aggarwal — AIR 1, 2015, Economics, Haryana, IIT Kanpur
+6. Srushti Jayant Deshmukh — AIR 5, 2018, Sociology, Madhya Pradesh, LSE
+7. Tina Dabi — AIR 1, 2016, Political Science, Delhi, Lady Shri Ram
+8. Athar Aamir Khan — AIR 2, 2016, Philosophy, Kashmir, IIT Mandi
+9. Junaid Ahmad — AIR 3, 2018, Geography, Uttar Pradesh, AMU
+10. Ira Singhal — AIR 1, 2015, Public Administration, Delhi, Netaji Subhas
+
+Each topper MUST have:
+- 5 strategy sections (Prelims, Mains, Optional, Interview, General)
+- 4 tips per section
+- Realistic marks breakdown
+- Working social media links (if available)
+
+═══════════════════════════════════════════════════════════════════════════════
+FILE: data/current_affairs.json — 50+ ENTRIES (Minimum 50 entries)
+═══════════════════════════════════════════════════════════════════════════════
+
+Structure:
+{
+  "id": "ca-2024-001",
+  "title": "India Successfully Tests Agni-V Missile with MIRV Technology",
+  "summary": "India conducted a successful flight test of the Agni-V ballistic missile equipped with Multiple Independently Targetable Re-entry Vehicle (MIRV) technology. This makes India the 6th country to possess MIRV capability. The test was conducted by DRDO and marks a significant milestone in India's nuclear deterrence capability.",
+  "source": "PIB",
+  "date": "2024-03-11",
+  "tags": ["Defence", "Science & Technology", "International Relations"],
+  "subject": "Science & Technology",
+  "importance": "high",
+  "relatedTerms": ["DRDO", "MIRV", "Nuclear Deterrence", "Ballistic Missile", "Agni-V"],
+  "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=example",
+  "imageUrl": null,
+  "prelimsRelevance": "Direct question on MIRV technology or Agni missiles",
+  "mainsRelevance": "Can be linked to India's defence policy, nuclear doctrine, or Make in India",
+  "factsToRemember": [
+    "India is the 6th country with MIRV technology after US, Russia, China, France, UK",
+    "Agni-V has a range of 5000+ km",
+    "DRDO developed this indigenously"
+  ]
+}
+
+COVER THESE TOPICS (Minimum 50 entries, 8-10 per category):
+- Constitutional amendments and Supreme Court judgments (8)
+- Economic policies, RBI decisions, Budget highlights (8)
+- International summits: G20, SCO, BRICS, UNGA, COP (8)
+- Environmental agreements and climate action (7)
+- Defence deals, space missions, ISRO achievements (7)
+- Social welfare schemes and government policies (7)
+- Science & technology breakthroughs (7)
+- India-bilateral relations and diplomatic visits (6)
+- Sports, awards, and cultural events (5)
+- Health and pandemic-related updates (5)
+
+═══════════════════════════════════════════════════════════════════════════════
+FILE: data/quizzes.json — 60+ QUESTIONS (Minimum 60 entries)
+═══════════════════════════════════════════════════════════════════════════════
+
+Structure:
+{
+  "id": "quiz-001",
+  "question": "Which of the following statements about the Harappan Civilization is NOT correct?",
+  "options": [
+    "It had a well-planned grid system in cities",
+    "The Great Bath was found at Mohenjo-daro",
+    "They used iron tools extensively",
+    "Cotton cultivation was practiced"
+  ],
+  "correctOptionIndex": 2,
+  "explanation": "The Harappan Civilization (2600-1900 BCE) was a Bronze Age civilization. They used copper and bronze tools but NOT iron extensively. Iron came into widespread use in India only during the later Vedic period (around 1000 BCE). The Great Bath at Mohenjo-daro, grid planning, and cotton cultivation (cotton was called 'Sindon' by Greeks) are all well-documented features.",
+  "subject": "History",
+  "date": "2024-01-15",
+  "difficulty": "medium",
+  "tags": ["Ancient History", "Harappan Civilization", "Indus Valley", "Archaeology"],
+  "source": "PYQ 2020",
+  "topic": "Indus Valley Civilization",
+  "yearAsked": 2020,
+  "paper": "GS1"
+}
+
+DISTRIBUTION:
+- History: 15 questions (Ancient 5, Medieval 3, Modern 7)
+- Polity: 12 questions (Constitution 5, Governance 3, Judiciary 2, Federalism 2)
+- Geography: 10 questions (Physical 4, Indian 4, World 2)
+- Economy: 10 questions (Basics 3, Indian 4, International 3)
+- Environment: 5 questions
+- Science & Technology: 5 questions
+- Current Affairs: 3 questions
+
+═══════════════════════════════════════════════════════════════════════════════
+FILE: data/glossary.json — 120+ TERMS (Minimum 120 entries)
+═══════════════════════════════════════════════════════════════════════════════
+
+Structure:
+{
+  "id": "gloss-001",
+  "term": "Fundamental Rights",
+  "termHindi": "मौलिक अधिकार",
+  "definition": "The basic human rights guaranteed by the Constitution of India to all citizens. They are enshrined in Part III (Articles 12-35) and are justiciable in nature.",
+  "detailedExplanation": "Fundamental Rights include Right to Equality (14-18), Right to Freedom (19-22), Right against Exploitation (23-24), Right to Freedom of Religion (25-28), Cultural and Educational Rights (29-30), and Right to Constitutional Remedies (32). They can be suspended during National Emergency except Articles 20 and 21. The 44th Amendment made Right to Property a legal right (Article 300A).",
+  "relatedSubjects": ["Polity", "Constitution", "GS Paper 2"],
+  "tags": ["Constitution", "Part III", "Justiciable", "Rights", "Articles 12-35"],
+  "examples": [
+    "Article 14: Right to Equality before law",
+    "Article 21: Right to Life and Personal Liberty",
+    "Article 32: Right to Constitutional Remedies (Heart of Constitution)"
+  ],
+  "relatedTerms": ["Directive Principles", "Fundamental Duties", "Article 352", "Habeas Corpus", "Mandal Commission"],
+  "importance": "high",
+  "frequencyInExam": "very-high"
+}
+
+MUST INCLUDE TERMS (Minimum 120, organized by subject):
+
+CONSTITUTIONAL/POLITY (30):
+FR, DPSP, FD, Basic Structure, Judicial Review, PIL, Writs, Amendment, 
+Emergency, President's Rule, Parliament, Lok Sabha, Rajya Sabha, Speaker, 
+No-Confidence, Money Bill, Ordinance, Governor, Chief Minister, Cabinet, 
+Council of Ministers, All India Services, UPSC, SPSC, Election Commission, 
+Finance Commission, NDC, Inter-State Council, Zonal Council, NITI Aayog
+
+ECONOMY (25):
+GDP, GNP, NNP, NDP, Fiscal Deficit, Revenue Deficit, Primary Deficit, 
+Inflation, Deflation, Stagflation, Repo Rate, Reverse Repo, CRR, SLR, MSF, 
+LAF, NPA, Basel Norms, GST, CGST, SGST, IGST, Direct Tax, Indirect Tax, 
+Progressive Tax, MSP, MEP, WTO, IMF, World Bank, FDI, FII, FPI, FEMA, 
+EXIM Policy, SEZ, MFI, SHG, NABARD, SIDBI, RBI, SEBI, IRDAI, PFRDA, NPS, 
+APY, PM-KISAN, PMFBY, MGNREGA, NFSA, PDS, DBT, Aadhaar, UPI, NPCI, 
+PLI Scheme, FRBM Act, CAG
+
+GEOGRAPHY (15):
+Monsoon, Jet Stream, ENSO, La Niña, El Niño, Western Disturbances, ITCZ, 
+Pressure Belt, Ocean Currents, Tides, Tsunami, Earthquake, Volcano, 
+Plate Tectonics, Weathering, Erosion, Soil Types, Watershed, Biosphere Reserve, 
+National Park, Wildlife Sanctuary, Ramsar Site, Biodiversity Hotspot, 
+Coral Reef, Mangrove, Wetland, Desertification, Deforestation
+
+ENVIRONMENT (15):
+Climate Change, Global Warming, Greenhouse Effect, Carbon Footprint, 
+Ozone Layer, Montreal Protocol, Kyoto Protocol, Paris Agreement, COP, 
+IPCC, UNFCCC, CBD, CITES, CMS, REDD+, Carbon Trading, Carbon Credits, 
+Carbon Neutrality, Net Zero, SDGs
+
+IR (20):
+UN, UNGA, UNSC, ICJ, WHO, UNESCO, UNICEF, ILO, FAO, UNDP, UNEP, WTO, 
+IMF, World Bank, AIIB, NDB, ADB, BRICS, SCO, G7, G20, QUAD, AUKUS, 
+IPEF, RCEP, CPTPP, SAARC, BIMSTEC, ASEAN, EU, NATO, NAM, Commonwealth, 
+OIC, OPEC, IAEA, OPCW, CTBTO, INTERPOL
+
+SECURITY (15):
+NIA, IB, RAW, CRPF, BSF, ITBP, CISF, SSB, NSG, SPG, NDMA, NCTC, UAPA, 
+AFSPA, Cyber Security, Dark Web, Deepfake, Drone, UAV, Missile Defense, 
+Ballistic Missile, Cruise Missile, MIRV, ICBM, SLBM, ASAT, Nuclear Triad
+
+═══════════════════════════════════════════════════════════════════════════════
+FILE: data/exam_info.json — COMPLETE EXAM STRUCTURE
+═══════════════════════════════════════════════════════════════════════════════
+
+Include:
+- All 3 stages with detailed paper breakdown
+- Eligibility with ALL categories (General, EWS, OBC, SC, ST, PwBD)
+- Attempts table with exact numbers
+- Fee structure for all categories
+- Recent 5-year cutoffs for all categories
+- Important dates for 2024-25 and 2025-26 cycle
+- Syllabus for all papers (Prelims GS, CSAT, Mains Essay, GS1-4, Optional)
+- Physical standards for IPS
+- Language options for Mains
+
+═══════════════════════════════════════════════════════════════════════════════
+FILE: data/ncerts.json — NCERT BOOKS LIBRARY
+═══════════════════════════════════════════════════════════════════════════════
+
+Structure:
+{
+  "id": "ncert-history-6",
+  "class": 6,
+  "subject": "History",
+  "title": "Our Pasts - I",
+  "description": "Introduction to ancient Indian history",
+  "chapters": 12,
+  "pdfUrl": "https://ncert.nic.in/textbook/pdf/fess1dd.zip",
+  "priority": "essential",
+  "forUpsc": "Builds foundation for Ancient History"
+}
+
+Include ALL NCERTs from Class 6-12 for:
+- History (Our Pasts, Themes in Indian History)
+- Geography (The Earth, India Physical Environment, etc.)
+- Polity (Democratic Politics, Indian Constitution at Work)
+- Economics (Understanding Economic Development, Introductory Microeconomics)
+- Science (Science, Biology, Chemistry, Physics)
+- Sociology (Social and Political Life, Indian Society)
+- Art & Culture (An Introduction to Indian Art)
+- Mathematics (for CSAT basics)
+
+═══════════════════════════════════════════════════════════════════════════════
+FILE: data/optional_subjects.json — 26 OPTIONAL SUBJECTS
+═══════════════════════════════════════════════════════════════════════════════
+
+Structure:
+{
+  "id": "anthropology",
+  "name": "Anthropology",
+  "nameHindi": "मानव विज्ञान",
+  "description": "Study of human societies, cultures, and biological development",
+  "scoringPotential": "high",
+  "syllabusOverlap": ["GS1", "GS3", "Essay"],
+  "difficulty": "medium",
+  "timeRequired": "4-5 months",
+  "resources": [
+    { "title": "Anthropology - Ember & Ember", "type": "book" },
+    { "title": "Indian Anthropology - Nadeem Hasnain", "type": "book" }
+  ],
+  "toppersWhoChose": ["Anudeep Durishetty", "Apala Mishra"],
+  "pros": ["High scoring", "Interesting subject", "Overlap with GS"],
+  "cons": ["Limited coaching", "Need diagrams", "Paper 2 requires current affairs"]
+}
+
+Include ALL 26 optional subjects:
+Agriculture, Animal Husbandry & Veterinary Science, Anthropology, Botany, 
+Chemistry, Civil Engineering, Commerce & Accountancy, Economics, Electrical 
+Engineering, Geography, Geology, History, Law, Literature (any), Management, 
+Mathematics, Mechanical Engineering, Medical Science, Philosophy, Physics, 
+Political Science & IR, Psychology, Public Administration, Sociology, Statistics, 
+Zoology
+
+═══════════════════════════════════════════════════════════════════════════════
+FILE: data/interview_resources.json — INTERVIEW PREPARATION
+═══════════════════════════════════════════════════════════════════════════════
+
+Structure:
+{
+  "id": "interview-daf",
+  "category": "DAF Preparation",
+  "title": "How to Analyze Your DAF",
+  "content": "Detailed guide on analyzing Detailed Application Form...",
+  "tips": ["Know every word on your DAF", "Prepare 2-3 stories for each hobby"],
+  "resources": [
+    { "name": "DAF Analysis Video", "url": "...", "type": "video" }
+  ]
+}
+
+Categories:
+- DAF Preparation
+- Mock Interviews
+- Hobby Preparation
+- Home State Preparation
+- Current Affairs for Interview
+- Dress Code & Etiquette
+- Common Questions
+- Stress Management
+
+═══════════════════════════════════════════════════════════════════════════════
+FILE: data/success_stories.json — 15 SUCCESS STORIES
+═══════════════════════════════════════════════════════════════════════════════
+
+Structure:
+{
+  "id": "story-001",
+  "name": "Ramesh Kumar",
+  "rank": 45,
+  "year": 2023,
+  "background": "Son of a farmer from Bihar",
+  "struggle": "Failed Prelims 3 times before clearing",
+  "keyLesson": "Consistency and belief in oneself",
+  "quote": "Every failure taught me something new",
+  "category": "rural-background"
+}
+
+Categories: rural-background, working-professional, first-attempt, multiple-attempts, 
+female-achiever, differently-abled, hindi-medium, engineering-background
+
+═══════════════════════════════════════════════════════════════════════════════
+                         🧩 INTERACTIVE FEATURES — DEEP IMPLEMENTATION
+═══════════════════════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════════════════════
+FEATURE 1: GLOBAL SEARCH (Command + K)
+═══════════════════════════════════════════════════════════════════════════════
+
+Implementation:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  TRIGGER: Cmd/Ctrl + K OR click search icon in navbar                    │
+│  UI: Full-screen overlay using Command dialog from Shadcn/ui               │
+│  SEARCH SCOPE:                                                             │
+│    ├── Resources: name, description, tags, category                        │
+│    ├── Subjects: name, topics in micro-syllabus                            │
+│    ├── Glossary: term, definition, relatedTerms, termHindi                  │
+│    ├── Current Affairs: title, summary, tags, factsToRemember             │
+│    ├── Quiz Questions: question text, explanation, tags                   │
+│    ├── Toppers: name, strategy content, optional                          │
+│    ├── Books: title, author, description                                  │
+│    └── NCERTs: title, subject, description                                │
+│  ALGORITHM:                                                                │
+│    - Convert query to lowercase                                            │
+│    - Tokenize query (split by spaces)                                      │
+│    - Search across all datasets simultaneously                             │
+│    - Score results by relevance:                                           │
+│      * Exact match in title/name: 10 points                               │
+│      * Starts with query: 5 points                                        │
+│      * Contains query: 3 points                                         │
+│      * Contains any token: 1 point                                      │
+│    - Sort by score descending                                              │
+│    - Limit to top 10 results per category, 30 total                       │
+│  RESULTS DISPLAY:                                                          │
+│    - Grouped by category with icon and count                               │
+│    - Each result: icon, title, subtitle, badge, highlight matched text    │
+│    - Keyboard: ↑↓ navigate, Enter select, Esc close, / focus search       │
+│    - Click result → navigate to page + scroll to section                 │
+│  EMPTY STATE: "No results found for 'xyz'. Try different keywords."        │
+│  RECENT SEARCHES: Store last 5 searches in localStorage                    │
+│  SUGGESTIONS: Show popular searches when empty                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Code in lib/search.ts:
