@@ -1,0 +1,560 @@
+  - Related subjects (clickable badges)
+  - Examples (bulleted list with icons)
+  - Related terms (clickable links, navigate to that term)
+  - Bookmark star (toggle, persist to localStorage)
+  - "Copy definition" button
+  - "Share term" button
+- "My Glossary" section: Filter to show only bookmarked terms
+- "Recently Viewed" section: Last 10 viewed terms
+- Export bookmarks as formatted text
+- Empty state: "No terms found. Try different search."
+
+═══════════════════════════════════════════════════════════════════════════════
+FEATURE 7: ANSWER WRITING PRACTICE TOOL
+═══════════════════════════════════════════════════════════════════════════════
+
+NEW PAGE: /answer-writing
+
+This is a CRITICAL missing feature for Mains preparation.
+
+Components:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  PRACTICE INTERFACE:                                                       │
+│  - Question selector: Filter by subject, GS paper, year, difficulty        │
+│  - Question display: Large card with context, word limit, marks           │
+│  - Timer: Settable (7 min for 10-marker, 11 min for 15-marker)            │
+│  - Text editor: Large textarea with word count, character count           │
+│  - Formatting hints: "Use Introduction-Body-Conclusion structure"          │
+│  - Submit button: Saves answer to localStorage                            │
+│                                                                             │
+│  SELF-REVIEW CHECKLIST:                                                    │
+│  - Introduction present? (Yes/No)                                          │
+│  - Body has examples/facts? (Yes/No)                                      │
+│  - Conclusion present? (Yes/No)                                            │
+│  - Word limit adhered? (Yes/No)                                           │
+│  - Diagrams/flowcharts used? (Yes/No)                                     │
+│  - Current affairs integrated? (Yes/No)                                    │
+│  - Score self: 1-10                                                        │
+│                                                                             │
+│  MODEL ANSWER COMPARISON:                                                  │
+│  - Display model answer below user's answer                               │
+│  - Highlight key points user missed                                         │
+│  - Show "Key phrases to include"                                           │
+│                                                                             │
+│  PROGRESS TRACKING:                                                        │
+│  - Total answers written                                                   │
+│  - Average self-score                                                      │
+│  - Subject-wise breakdown                                                  │
+│  - Streak: Consecutive days of answer writing                              │
+│  - Weekly target: 14 answers (2 per day)                                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+FEATURE 8: NCERT LIBRARY
+═══════════════════════════════════════════════════════════════════════════════
+
+NEW PAGE: /ncerts
+
+- Grid view: Class 6-12, all subjects
+- Filter: By class, by subject, by priority (Essential/Recommended/Optional)
+- Card design:
+  - Class badge (Class 6, Class 11, etc.)
+  - Subject color coding
+  - Book title
+  - Chapter count
+  - Priority badge
+  - "Why for UPSC?" explanation
+  - Download PDF button (external link to ncert.nic.in)
+  - "Mark as Read" toggle
+- Reading progress: Track which chapters completed
+- Study path: "Start with Class 6 History → Class 7 → ... → Class 12"
+- Importance indicator: "Must read" vs "Good to read" vs "Reference only"
+
+═══════════════════════════════════════════════════════════════════════════════
+FEATURE 9: OPTIONAL SUBJECT GUIDE
+═══════════════════════════════════════════════════════════════════════════════
+
+NEW PAGE: /optional-subjects
+
+- Comparison table: All 26 optional subjects side-by-side
+  Columns: Subject | Scoring Potential | Syllabus Overlap | Difficulty | Time Required
+- Sortable by any column
+- Filter: By scoring potential, by overlap with GS, by difficulty
+- Detail view per subject:
+  - Why choose this subject?
+  - Who should choose it?
+  - Syllabus overview
+  - Standard books
+  - Toppers who chose it
+  - Pros and cons
+  - Coaching availability
+- "Find My Optional" quiz: 5 questions to suggest best optional
+- Subject selection checklist
+
+═══════════════════════════════════════════════════════════════════════════════
+FEATURE 10: INTERVIEW PREPARATION
+═══════════════════════════════════════════════════════════════════════════════
+
+NEW PAGE: /interview
+
+Sections:
+1. DAF ANALYSIS GUIDE
+   - What is DAF (Detailed Application Form)
+   - How to fill DAF strategically
+   - Common mistakes in DAF
+   - How to prepare for each section of DAF
+   - Hobbies preparation guide
+   - Home state preparation guide
+
+2. MOCK INTERVIEW RESOURCES
+   - List of institutes offering mock interviews
+   - Free online mock interview platforms
+   - Self-mock interview checklist
+
+3. COMMON QUESTIONS
+   - Why Civil Services?
+   - Why this service preference?
+   - Current affairs questions by subject
+   - Situational questions
+   - Ethical dilemma questions
+
+4. DRESS CODE & ETIQUETTE
+   - What to wear (male/female)
+   - Body language tips
+   - Do's and Don'ts
+
+5. STRESS MANAGEMENT
+   - Breathing exercises
+   - Confidence building tips
+   - Day-before-interview checklist
+
+═══════════════════════════════════════════════════════════════════════════════
+FEATURE 11: MOTIVATION CENTER
+═══════════════════════════════════════════════════════════════════════════════
+
+NEW PAGE: /motivation
+
+Sections:
+1. DAILY QUOTE
+   - Large, beautifully styled quote
+   - Author attribution
+   - Share button (copy to clipboard)
+   - "Save to favorites" button
+
+2. SUCCESS STORIES
+   - Filter: Rural background | Working professional | Multiple attempts | First attempt | Female achiever | Hindi medium
+   - Card: Name, rank, background, struggle, key lesson, quote
+   - "Read full story" expandable
+
+3. TOPPER INTERVIEWS
+   - Embedded YouTube videos (thumbnail + title)
+   - Filter by year, rank, optional subject
+
+4. DAILY AFFIRMATIONS
+   - Rotating affirmations for aspirants
+   - "I am capable. I am consistent. I will succeed."
+
+5. PROGRESS CELEBRATION
+   - Confetti animation when user completes milestones
+   - Milestones: First quiz, 7-day streak, 30-day streak, 100 questions, etc.
+
+═══════════════════════════════════════════════════════════════════════════════
+FEATURE 12: NEWS TICKER
+═══════════════════════════════════════════════════════════════════════════════
+
+- Sticky top bar below navbar
+- Horizontal scrolling text
+- Shows latest 5 current affairs headlines
+- Click headline → navigate to current affairs page
+- Pause on hover
+- "View All" link on right
+- Color-coded by subject
+
+═══════════════════════════════════════════════════════════════════════════════
+                         📄 PAGE-BY-PAGE SPECIFICATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: / (HOME)
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTIONS (Top to Bottom):
+1. NEWS TICKER — Latest current affairs headlines (sticky)
+2. HERO SECTION:
+   - Full-width gradient background (indigo→purple, animated subtle shift)
+   - Floating particles (CSS only, performance-friendly)
+   - Large headline: "Your Complete UPSC CSE Preparation Hub"
+   - Subheadline: "Curated resources, smart tools, and proven strategies — all in one place"
+   - Two CTA buttons: "Start Learning" (primary, large) + "Take a Quiz" (secondary, large)
+   - Live exam countdown: "Next Prelims in XX days, YY hours"
+   - Quick stats row: "12 Subjects | 500+ Resources | 60+ Quizzes | 120+ Terms"
+   - Scroll indicator (animated chevron bounce)
+
+3. QUICK LINKS GRID (6 cards):
+   - 📚 Subjects — "Master all 12 subjects"
+   - 🧠 Quiz — "Test your knowledge daily"
+   - 📰 Current Affairs — "Stay updated with daily news"
+   - 📅 Planner — "Organize your preparation"
+   - 🏆 Toppers — "Learn from the best"
+   - 📖 Glossary — "Master 120+ key terms"
+   - Each: Icon (colored background), title, description, arrow link
+   - Hover: Card lifts (translateY -4px), shadow increases, icon scales 1.1
+
+4. FEATURE SHOWCASE (3 columns):
+   - 🔍 Smart Search — "Find anything instantly with Cmd+K"
+   - 🧠 Interactive Quiz — "Timed quizzes with detailed explanations"
+   - 📅 Study Planner — "Drag-drop planner with templates"
+   - ✍️ Answer Writing — "Practice Mains answers daily"
+   - 🧮 Score Calculator — "Predict your rank"
+   - 🌓 Dark Mode — "Easy on the eyes, day or night"
+   - Each: Icon, title, description, screenshot/mockup placeholder
+
+5. DAILY CURRENT AFFAIRS (horizontal scroll):
+   - Last 5 entries as compact cards
+   - Date, title (truncated), importance dot
+   - "View All Current Affairs" link
+
+6. DAILY QUOTE:
+   - Large quotation marks (decorative)
+   - Quote text (text-2xl, italic, font-serif)
+   - Author attribution
+   - "Share" and "Save" buttons
+
+7. EXAM TIMELINE PREVIEW:
+   - Mini horizontal timeline (3 upcoming events)
+   - Event name, date, days remaining
+   - "View Full Calendar" link
+
+8. STATS COUNTER:
+   - 4 animated counters triggered on scroll
+   - "12 Subjects" | "500+ Resources" | "60+ Quizzes" | "10 Toppers"
+   - Count up from 0 to target over 2 seconds
+
+9. TESTIMONIAL CAROUSEL:
+   - Auto-rotating every 5 seconds
+   - Topper quote + name + rank
+   - Navigation dots
+
+10. NEWSLETTER SIGNUP:
+    - "Get daily current affairs in your inbox"
+    - Email input + "Subscribe" button
+    - Privacy note: "We respect your privacy. Unsubscribe anytime."
+
+11. FOOTER:
+    - 4-column layout:
+      * About: Logo, tagline, brief description
+      * Quick Links: Subjects, Resources, Quiz, Planner, Glossary
+      * Resources: Current Affairs, Toppers, Calculator, Exam Info
+      * Connect: Social links, Contact, Feedback
+    - Bottom bar: Copyright, Made with ❤️ for aspirants, Back to top
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /subjects
+═══════════════════════════════════════════════════════════════════════════════
+
+- Page header with title "All Subjects" and description
+- Filter tabs: All | GS Paper 1 | GS Paper 2 | GS Paper 3 | GS Paper 4 | Essay | Optional | CSAT
+- Grid: 3 columns desktop, 2 tablet, 1 mobile, gap-6
+- Subject cards:
+  - Colored icon background (subject color, rounded-2xl, p-4)
+  - Subject name (text-xl, font-bold)
+  - Hindi name (text-sm, text-slate-500)
+  - Brief description (text-sm, line-clamp-2)
+  - Weightage badges: "Prelims: 15%" | "Mains: 150 marks"
+  - GS Paper badge
+  - Difficulty badge (Easy/Medium/Hard)
+  - Time required
+  - "Explore Subject" button (outline)
+- Hover: Card lifts, icon background lightens, shadow increases
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /subjects/[slug]
+═══════════════════════════════════════════════════════════════════════════════
+
+- Breadcrumb: Home > Subjects > Subject Name
+- Header: Large icon (colored background), subject name, Hindi name, weightage chips, description
+- Sticky tabs (using Shadcn Tabs, scrollable on mobile):
+  
+  TAB 1: SYLLABUS
+  - Accordion with categories
+  - Each category expandable with topic list
+  - Checkboxes to mark topics as complete (persist to localStorage)
+  - Progress bar showing % completed per category
+  - Overall progress bar
+  - "Mark all as complete" button
+  
+  TAB 2: BOOKS
+  - Grid of book cards (2 columns)
+  - Each: Title, author, publisher, description, priority badge (Essential/Recommended/Optional)
+  - Links: Purchase (Amazon, opens new tab), PDF (if free)
+  - "Mark as Read" toggle
+  - Reading progress indicator
+  
+  TAB 3: VIDEOS
+  - YouTube playlist cards
+  - Channel name, video count, description, language badge
+  - External link button (opens new tab)
+  - "Watch later" bookmark
+  
+  TAB 4: PREVIOUS YEARS
+  - Table: Year | Paper | Questions | Download PDF
+  - Filter by year range (2015-2024)
+  - Sort by year
+  - "View Analysis" link
+  
+  TAB 5: TIPS & MISTAKES
+  - Study tips (numbered list with check icons)
+  - Common mistakes (alert style, amber background)
+  - Current affairs integration notes
+  - "Download tips as PDF" (print-friendly CSS)
+
+  TAB 6: PROGRESS
+  - Visual progress dashboard
+  - Topics completed: X/Y
+  - Books read: X/Y
+  - Videos watched: X/Y
+  - PYQs attempted: X/Y
+  - Estimated completion date
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /resources
+═══════════════════════════════════════════════════════════════════════════════
+
+- Two-column layout: Filters (left, 280px, sticky on desktop) | Results (right, flex-1)
+- FILTERS:
+  - Search input (with magnifying glass icon)
+  - Type: All | Website | YouTube | PDF | App | Blog (checkbox group)
+  - Subject: All + all 12 subjects (dropdown)
+  - Language: English | Hindi | Bilingual (radio group)
+  - Official only: Toggle switch
+  - Rating: 1-5 stars (click to set minimum)
+  - Category: Official | Educational | YouTube | App | Blog (checkbox group)
+  - Clear all button (resets all filters)
+- RESULTS:
+  - Sort dropdown: Relevance | Rating (High→Low) | Name (A→Z) | Recently Added
+  - View toggle: Grid (3 columns) | List (1 column)
+  - Grid: Resource cards
+  - List: Compact row with icon, name, type, rating, link
+  - Resource cards:
+    - Type icon/badge (colored, top-right)
+    - Name (text-lg, font-semibold)
+    - Description (text-sm, text-slate-500, line-clamp-2)
+    - Subject tag (small badge)
+    - Rating: 5 stars, filled/unfilled
+    - Language badge (EN/HI/BI)
+    - Official badge (if applicable, green dot)
+    - Tags (small pills, rounded-full)
+    - External link button (opens new tab, with external link icon)
+  - Empty state: Search illustration + "No resources match your filters" + "Clear filters" button
+  - Results count: "Showing X of Y resources"
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /toppers
+═══════════════════════════════════════════════════════════════════════════════
+
+- Header: "Strategies from India's Best" + description
+- Filter: By year, by optional subject, by category (General/OBC/SC/ST)
+- Grid: 2 columns desktop, 1 mobile, gap-8
+- Topper cards:
+  - Rank badge (circular, gold gradient for AIR 1, silver for AIR 2-5, bronze for AIR 6-10)
+  - Name (text-xl, font-bold)
+  - Rank and year (text-lg, text-indigo-600)
+  - Optional subject badge
+  - Total marks
+  - State badge
+  - Education badge
+  - Quote (italic, text-slate-600, line-clamp-2)
+  - "View Strategy" button (primary)
+- Expanded view (modal or dedicated page):
+  - Profile header: Large rank badge, name, all details
+  - Marks breakdown table: Paper | Marks | Max Marks
+  - Strategy tabs: Prelims | Mains | Interview | Optional | General
+  - Each tab: Content (formatted text) + bullet tips
+  - External links: Blog, Interview, Notes (all open in new tab)
+  - "Save Strategy" bookmark
+  - "Share" button
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /current-affairs
+═══════════════════════════════════════════════════════════════════════════════
+
+- Header with title, date filter, subject filter
+- Filter bar (sticky on scroll):
+  - Search input
+  - Date range: Last 7 days | 30 days | 3 months | 6 months | 1 year | Custom (calendar picker)
+  - Subject pills: All | Polity | Economy | IR | Environment | Science | Society | Defence | Sports
+  - Importance: All | High | Medium | Low
+  - Sort: Newest | Importance
+- Masonry grid (CSS columns or grid with auto-rows)
+- Card design:
+  - Date badge (top right, formatted: "Jan 15, 2024")
+  - Importance dot (red=high, amber=medium, green=low) with tooltip
+  - Title (text-lg, font-semibold, hover:text-indigo-600)
+  - Summary (text-sm, text-slate-600, line-clamp-3, expandable)
+  - Prelims relevance (badge: "Prelims Important")
+  - Mains relevance (badge: "Mains Important")
+  - Facts to remember (bulleted, hidden by default, expandable)
+  - Tags (clickable pills, filter on click)
+  - Source link (external, opens new tab)
+  - Related terms (clickable, navigate to glossary)
+  - "Mark as Read" toggle (check icon)
+  - Bookmark star
+- Load more button (spinner while loading)
+- Infinite scroll option (toggle)
+- Export: "Copy summary" button
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /quiz
+═══════════════════════════════════════════════════════════════════════════════
+
+Full quiz implementation as described in Feature 2.
+
+Additional elements:
+- Quiz history sidebar (collapsible)
+- Subject performance chart (Recharts radar chart)
+- Weak areas identification: "You need to work on: Polity, Environment"
+- Daily streak indicator (fire icon + number)
+- Leaderboard (local, based on your attempts)
+- "Challenge a friend" (copy quiz link)
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /planner
+═══════════════════════════════════════════════════════════════════════════════
+
+Full study planner as described in Feature 3.
+
+Additional elements:
+- Month view toggle (in addition to week view)
+- Today button (jump to current week)
+- Print button (print-friendly CSS)
+- Share button (copy schedule text)
+- Notification settings (browser notifications)
+- Sync with Google Calendar (manual export)
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /glossary
+═══════════════════════════════════════════════════════════════════════════════
+
+Full glossary as described in Feature 6.
+
+Additional elements:
+- "Random Term" button (for discovery)
+- "Term of the Day" section
+- Flashcard mode (flip card: term → definition)
+- Quiz mode from glossary (test yourself on bookmarked terms)
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /calculator
+═══════════════════════════════════════════════════════════════════════════════
+
+Full calculator as described in Feature 4.
+
+Additional elements:
+- Save calculation (to localStorage)
+- Compare calculations (side-by-side)
+- Share result (copy formatted text)
+- Previous year cutoff table (sortable)
+- "What if" scenario slider: "What if I score X more in GS?"
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /exam-info
+═══════════════════════════════════════════════════════════════════════════════
+
+- Visual timeline of exam stages (horizontal, scrollable)
+- Eligibility checker (interactive form with validation)
+- Syllabus viewer with search (all papers, expandable)
+- Cutoff chart (Recharts bar chart, filter by category)
+- Important dates table (sortable, filterable, exportable)
+- FAQ accordion (20+ common questions)
+- "Am I Eligible?" quick check form
+- Documents checklist for application
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /answer-writing
+═══════════════════════════════════════════════════════════════════════════════
+
+Full answer writing tool as described in Feature 7.
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /ncerts
+═══════════════════════════════════════════════════════════════════════════════
+
+Full NCERT library as described in Feature 8.
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /optional-subjects
+═══════════════════════════════════════════════════════════════════════════════
+
+Full optional subject guide as described in Feature 9.
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /interview
+═══════════════════════════════════════════════════════════════════════════════
+
+Full interview preparation as described in Feature 10.
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /motivation
+═══════════════════════════════════════════════════════════════════════════════
+
+Full motivation center as described in Feature 11.
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGE: /about
+═══════════════════════════════════════════════════════════════════════════════
+
+- Mission statement (large, centered)
+- Features overview (grid of 12 features with icons)
+- How to use the platform (step-by-step, numbered)
+- Data sources attribution
+- Disclaimer: "This is an independent educational platform not affiliated with UPSC"
+- Contact/feedback form (Name, Email, Message, Submit)
+- Team/contributors section
+- Open source contribution link
+- Version number
+
+═══════════════════════════════════════════════════════════════════════════════
+                         🔒 SEO & PERFORMANCE
+═══════════════════════════════════════════════════════════════════════════════
+
+METADATA (Every page must have unique, descriptive metadata):
+```typescript
+export const metadata: Metadata = {
+  title: "Page Name | UPSC CSE Hub — Complete IAS Preparation Platform",
+  description: "Specific, keyword-rich description between 150-160 characters. Include primary keywords naturally.",
+  keywords: [
+    "UPSC", "CSE", "IAS", "IPS", "IFS", "Civil Services", 
+    "UPSC preparation", "IAS exam", "UPSC syllabus",
+    ...pageSpecificKeywords
+  ],
+  authors: [{ name: "UPSC CSE Hub" }],
+  creator: "UPSC CSE Hub",
+  publisher: "UPSC CSE Hub",
+  openGraph: {
+    title: "Page Name | UPSC CSE Hub",
+    description: "...",
+    type: "website",
+    locale: "en_IN",
+    siteName: "UPSC CSE Hub",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "...",
+    description: "...",
+    creator: "@upsccsehub",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: "https://upsc-cse-hub.vercel.app/page-path",
+  },
+};
