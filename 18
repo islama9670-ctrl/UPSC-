@@ -1,0 +1,5 @@
+# Build first
+npm run build
+
+# Deploy dist folder
+netlify deploy --prod --dir=dist
