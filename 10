@@ -1,0 +1,20 @@
+
+---
+
+## 📥 **How to Use This Master Prompt**
+
+### Step 1: Copy Everything
+Copy the **entire block above** starting from `╔═══════════════════════════════════════` to the final line.
+
+### Step 2: Paste into AI
+Paste into **Claude, GPT-4, or any advanced code-generating AI**.
+
+### Step 3: Generate & Save Files
+The AI will generate all files. Save them to the exact folder structure specified.
+
+### Step 4: Run Locally
+```bash
+cd upsc-cse-hub
+npm install
+npm run dev
+# Open
