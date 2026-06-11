@@ -1,0 +1,6 @@
+# Update next.config.js
+output: 'export',
+distDir: 'dist',
+basePath: '/upsc-cse-hub',
+
+# Build and push to gh-pages branch
