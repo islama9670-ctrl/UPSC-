@@ -1,0 +1,4 @@
+# One-click deploy
+vercel --prod
+
+# Or connect GitHub repo for auto-deploy
