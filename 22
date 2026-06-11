@@ -1,0 +1,33 @@
+
+---
+
+## 🎓 **Final Notes for the AI**
+
+When generating this codebase:
+
+1. **Start with types** — Define all TypeScript interfaces first
+2. **Then data files** — Populate all JSON with real content
+3. **Then utilities** — Search, formatters, helpers
+4. **Then contexts** — Quiz, planner, glossary state
+5. **Then components** — Build reusable components first
+6. **Then pages** — Assemble pages from components
+7. **Then polish** — Add animations, transitions, micro-interactions
+8. **Finally test** — Verify every feature works end-to-end
+
+**Remember:** This is used by serious UPSC aspirants preparing for one of India's toughest exams. Every detail matters. Every feature should save them time. Every piece of information should be accurate.
+
+**Make it worthy of their dreams.**
+
+---
+
+## 🏁 **THE END**
+
+This completes the **Ultimate UPSC CSE Hub Master Prompt**. 
+
+Copy everything from `╔═══════════════════════════════════════` above through this entire document. Paste into your AI code generator. The result will be a **world-class, production-ready UPSC preparation platform**.
+
+**Good luck, future civil servant!** 🇮🇳
+
+---
+
+*This prompt was crafted with extreme attention to detail for maximum code quality, user experience, and educational value.*
