@@ -1,0 +1,8 @@
+upsc-cse-hub/
+├── app/              # Next.js App Router pages
+├── components/       # React components
+├── data/             # Static JSON data files
+├── lib/              # Utility functions and contexts
+├── types/            # TypeScript type definitions
+├── hooks/            # Custom React hooks
+└── public/           # Static assets
