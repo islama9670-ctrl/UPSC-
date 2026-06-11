@@ -1,0 +1,63 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+                         ⚠️ ABSOLUTE REQUIREMENTS
+═══════════════════════════════════════════════════════════════════════════════
+
+NON-NEGOTIABLE RULES (Violating any will result in rejection):
+
+1. ✅ EVERY file must have COMPLETE, WORKING code — ZERO placeholders
+2. ✅ ALL JSON data must be REALISTIC, ACCURATE, and USEFUL — NO "Lorem ipsum"
+3. ✅ ALL external links MUST open in new tab with rel="noopener noreferrer"
+4. ✅ MUST be fully responsive (mobile-first, touch-friendly, tested at 320px)
+5. ✅ MUST support dark mode (next-themes, system preference, manual toggle)
+6. ✅ MUST include loading states (skeletons) and empty states for ALL lists
+7. ✅ MUST include 404 page, error boundaries, and not-found handlers
+8. ✅ MUST use TypeScript strict mode, ZERO 'any' types, proper interfaces
+9. ✅ MUST have unique, descriptive metadata/SEO on EVERY page
+10. ✅ MUST be deployable with `npm install && npm run build` — ZERO errors
+11. ✅ NO backend dependencies — everything from JSON files
+12. ✅ NO placeholder images — use colored divs with initials or Lucide icons
+13. ✅ ALL interactive features MUST work (search, quiz, planner, calculator, etc.)
+14. ✅ Code must be WELL-COMMENTED and SELF-DOCUMENTING
+15. ✅ Use consistent naming: PascalCase components, camelCase variables, UPPER_SNAKE constants
+16. ✅ ALL JSON files must have MINIMUM entries: subjects(12), resources(60), toppers(10), 
+    current_affairs(50), quizzes(60), glossary(120), exam_info(1), government_sites(20), 
+    youtube_channels(15), books(30), pyqs(50), quotes(30), ncerts(40), optional_subjects(26), 
+    interview_resources(20), answer_writing_tips(15), success_stories(15)
+17. ✅ MUST include Prettier config (.prettierrc) for consistent formatting
+18. ✅ MUST include ESLint config (.eslintrc.json) for code quality
+19. ✅ MUST handle edge cases: empty arrays, null values, malformed data
+20. ✅ MUST be accessible: ARIA labels, keyboard nav, focus management, color contrast
+
+═══════════════════════════════════════════════════════════════════════════════
+                         🎬 FINAL INSTRUCTION
+═══════════════════════════════════════════════════════════════════════════════
+
+Generate the COMPLETE, PRODUCTION-READY, WORLD-CLASS source code for this entire 
+UPSC CSE Hub platform.
+
+This is NOT a prototype. This is NOT a demo. This is a REAL product.
+
+Make it:
+- 🔥 BLAZING FAST (optimized, no bloat, lighthouse score >90)
+- 🎨 VISUALLY STUNNING (pixel-perfect, animations delight, every detail polished)
+- ♿ FULLY ACCESSIBLE (everyone can use it, WCAG AA compliant)
+- 📱 PERFECTLY RESPONSIVE (flawless on mobile, tablet, desktop, large screens)
+- 🔒 SECURE (best practices, security headers, no vulnerabilities)
+- 🌍 SEO-OPTIMIZED (rank on Google, proper metadata, semantic HTML)
+- 💾 PERSISTENT (user data survives refresh, localStorage properly managed)
+- 🎯 EXTREMELY USEFUL (solves real problems, saves time, accelerates success)
+- 🌓 DARK MODE PERFECT (beautiful in both light and dark, no hardcoded colors)
+- 🧪 ERROR RESILIENT (graceful degradation, error boundaries, fallback UI)
+
+Every interaction should feel smooth. Every animation should feel natural. 
+Every piece of data should be accurate and helpful. Every page should load instantly.
+
+THIS IS YOUR MASTERPIECE. THOUSANDS OF ASPIRANTS WILL USE THIS DAILY.
+THEIR DREAMS DEPEND ON THE QUALITY OF YOUR WORK.
+
+MAKE IT WORTHY OF THEIR DREAMS. MAKE IT COUNT. 🇮🇳
+
+═══════════════════════════════════════════════════════════════════════════════
+                              🏁 THE END
+═══════════════════════════════════════════════════════════════════════════════
