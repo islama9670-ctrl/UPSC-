@@ -1,0 +1,80 @@
+upsc-platform/
+├── public/
+│   ├── favicon.ico
+│   └── images/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx                 # Dashboard
+│   │   ├── globals.css
+│   │   ├── exam-structure/page.tsx
+│   │   ├── syllabus/[subject]/page.tsx
+│   │   ├── resources/page.tsx
+│   │   ├── official-sites/page.tsx
+│   │   ├── toppers/page.tsx
+│   │   ├── current-affairs/page.tsx
+│   │   ├── test-series/page.tsx
+│   │   ├── study-materials/page.tsx
+│   │   ├── tools/
+│   │   │   ├── quiz/page.tsx
+│   │   │   ├── glossary/page.tsx
+│   │   │   ├── calculator/page.tsx
+│   │   │   └── planner/page.tsx
+│   │   └── search/page.tsx
+│   ├── components/
+│   │   ├── ui/                      # Shadcn-style primitives
+│   │   │   ├── button.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── input.tsx
+│   │   │   ├── tabs.tsx
+│   │   │   ├── accordion.tsx
+│   │   │   ├── badge.tsx
+│   │   │   ├── scroll-area.tsx
+│   │   │   ├── separator.tsx
+│   │   │   ├── skeleton.tsx
+│   │   │   └── tooltip.tsx
+│   │   ├── layout/
+│   │   │   ├── header.tsx
+│   │   │   ├── footer.tsx
+│   │   │   ├── sidebar.tsx
+│   │   │   └── mobile-nav.tsx
+│   │   ├── features/
+│   │   │   ├── quiz-engine.tsx
+│   │   │   ├── ca-card.tsx
+│   │   │   ├── resource-card.tsx
+│   │   │   ├── syllabus-tree.tsx
+│   │   │   ├── planner-board.tsx
+│   │   │   └── search-results.tsx
+│   │   └── providers/
+│   │       ├── search-provider.tsx
+│   │       └── quiz-provider.tsx
+│   ├── data/
+│   │   ├── subjects.json
+│   │   ├── resources.json
+│   │   ├── toppers.json
+│   │   ├── glossary.json
+│   │   ├── current_affairs.json
+│   │   ├── quizzes.json
+│   │   ├── official_sites.json
+│   │   └── test_series.json
+│   ├── hooks/
+│   │   ├── use-local-storage.ts
+│   │   ├── use-debounce.ts
+│   │   └── use-quiz.ts
+│   ├── lib/
+│   │   ├── utils.ts
+│   │   ├── search-engine.ts
+│   │   └── constants.ts
+│   ├── types/
+│   │   └── index.ts
+│   └── context/
+│       └── app-context.tsx
+├── .gitignore
+├── next.config.mjs
+├── package.json
+├── postcss.config.mjs
+├── tailwind.config.ts
+├── tsconfig.json
+├── vercel.json
+├── netlify.toml
+└── README.md
