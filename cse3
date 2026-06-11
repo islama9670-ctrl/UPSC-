@@ -1,0 +1,13 @@
+// Save to localStorage on every state change
+const QUIZ_STORAGE_KEY = 'upsc-quiz-history';
+
+interface QuizAttempt {
+  id: string;
+  date: string;
+  score: number;
+  totalQuestions: number;
+  subject: string;
+  difficulty: string;
+  timeTaken: number;
+  accuracy: number;
+}
