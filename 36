@@ -1,0 +1,2 @@
+npm run build
+# Deploy dist/ folder to Vercel, Netlify, or GitHub Pages
