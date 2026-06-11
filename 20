@@ -1,0 +1,36 @@
+# 🏛️ UPSC CSE Hub
+
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](.)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Vercel](https://img.shields.io/badge/deployed%20on-Vercel-black)](https://vercel.com)
+
+> Your Complete UPSC Civil Services Examination Preparation Platform
+
+## ✨ Features
+
+- 📚 **12 Complete Subjects** with micro-syllabus, books, videos, PYQs
+- 🔗 **500+ Curated Resources** — websites, YouTube, PDFs, apps
+- 🏆 **Topper Strategies** from AIR 1-10 rankers
+- 📰 **Daily Current Affairs** with smart tagging
+- 🧠 **Interactive Quiz** with timer, analytics, progress tracking
+- 📅 **Study Planner** with drag-drop and templates
+- 📖 **120+ Term Glossary** with search and bookmarks
+- 🧮 **Score Calculator** for Prelims, Mains, Interview
+- 🔍 **Global Search** across all content (Cmd+K)
+- 🌓 **Dark Mode** support
+- 📱 **Fully Responsive** design
+
+## 🛠️ Tech Stack
+
+- Next.js 15 + React 19 + TypeScript
+- Tailwind CSS + Shadcn/ui
+- Framer Motion animations
+- Recharts for data visualization
+
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/yourname/upsc-cse-hub.git
+cd upsc-cse-hub
+npm install
+npm run dev
