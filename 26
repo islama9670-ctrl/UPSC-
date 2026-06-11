@@ -1,0 +1,20 @@
+interface PlannerState {
+  sessions: PlannerSession[];
+  templates: PlannerTemplate[];
+  activeTemplate: string | null;
+  weekOffset: number;  // 0 = current week, -1 = last week, etc.
+}
+
+interface PlannerSession {
+  id: string;
+  day: 'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday' | 'saturday' | 'sunday';
+  startTime: string;  // "06:00"
+  endTime: string;    // "08:00"
+  type: SessionType;
+  subject?: string;
+  title: string;
+  notes?: string;
+  priority: 'high' | 'medium' | 'low';
+  completed: boolean;
+  color: string;
+}
