@@ -1,0 +1,108 @@
+# 🏛️ UPSC CSE Hub
+
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](.)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Vercel](https://img.shields.io/badge/deployed%20on-Vercel-black)](https://vercel.com)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org)
+[![React](https://img.shields.io/badge/React-19-blue)](https://react.dev)
+
+> Your Complete UPSC Civil Services Examination Preparation Platform
+> One Platform. Every Resource. Your Success.
+
+## ✨ Features
+
+### 📚 Complete Subject Coverage
+- 12 subjects with detailed micro-syllabus
+- Standard books with purchase links
+- YouTube playlists curated by subject
+- Previous year questions (2015-2024)
+
+### 🔗 500+ Curated Resources
+- Official government websites
+- Educational platforms and YouTube channels
+- Free PDFs and study materials
+- Advanced filtering and search
+
+### 🏆 Topper Strategies
+- 10 toppers (AIR 1-10) with complete strategies
+- Prelims, Mains, Optional, Interview breakdowns
+- Blogs, interviews, and notes links
+
+### 📰 Daily Current Affairs
+- 50+ entries with smart tagging
+- Prelims and Mains relevance
+- Facts to remember
+- Auto-linking to glossary
+
+### 🧠 Interactive Quiz
+- 60+ questions across all subjects
+- Timed quizzes with explanations
+- Progress tracking and streaks
+- Performance analytics
+
+### 📅 Study Planner
+- Drag-drop weekly calendar
+- Pre-built templates for all stages
+- Progress tracking
+- Export and print support
+
+### 📖 120+ Term Glossary
+- Searchable dictionary of UPSC terms
+- Hindi translations
+- Related terms and examples
+- Bookmark and flashcard mode
+
+### 🧮 Score Calculator
+- Prelims, Mains, Interview calculators
+- Attempts left calculator
+- Previous year cutoff comparison
+- Rank prediction
+
+### ✍️ Answer Writing Practice
+- Mains answer writing tool
+- Self-review checklist
+- Model answer comparison
+- Progress tracking
+
+### 📚 NCERT Library
+- Class 6-12 all subjects
+- Download links
+- Reading progress tracking
+
+### 🎤 Interview Preparation
+- DAF analysis guide
+- Mock interview resources
+- Common questions
+- Dress code and etiquette
+
+### 💪 Motivation Center
+- Daily quotes and affirmations
+- Success stories
+- Topper interviews
+- Progress celebrations
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript 5.3+ (Strict Mode)
+- **Styling:** Tailwind CSS 3.4+
+- **UI Components:** Shadcn/ui
+- **Animation:** Framer Motion
+- **Charts:** Recharts
+- **Drag & Drop:** @dnd-kit
+- **PDF Export:** html2canvas + jspdf
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/yourname/upsc-cse-hub.git
+
+# Navigate to project
+cd upsc-cse-hub
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
