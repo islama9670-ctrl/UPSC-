@@ -1,0 +1,24 @@
+Category	Check	Status	
+Functionality	All pages load without errors	⬜	
+	Global search works across all data	⬜	
+	Quiz flows through all states correctly	⬜	
+	Study planner drag-drop works	⬜	
+	Calculator shows correct results	⬜	
+	Glossary bookmarks persist	⬜	
+Responsive	Mobile (320px) layout correct	⬜	
+	Tablet (768px) layout correct	⬜	
+	Desktop (1440px) layout correct	⬜	
+Dark Mode	All pages readable in dark mode	⬜	
+	Colors invert correctly	⬜	
+	No hardcoded colors	⬜	
+Performance	Lighthouse score >90	⬜	
+	No console errors	⬜	
+	Fast initial load	⬜	
+Accessibility	Keyboard navigation works	⬜	
+	ARIA labels present	⬜	
+	Color contrast compliant	⬜	
+SEO	All pages have metadata	⬜	
+	Semantic HTML structure	⬜	
+Data	All JSON files have 20+ entries	⬜	
+	All URLs are real and working	⬜	
+	No placeholder text	⬜	
