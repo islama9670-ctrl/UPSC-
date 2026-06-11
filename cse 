@@ -1,0 +1,44 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+FEATURE 2: INTERACTIVE QUIZ
+═══════════════════════════════════════════════════════════════════════════════
+
+STATE MANAGEMENT (React Context + useReducer):
+
+```typescript
+// types/quiz.ts
+interface QuizState {
+  status: 'idle' | 'configuring' | 'in-progress' | 'reviewing' | 'completed';
+  questions: QuizQuestion[];
+  currentIndex: number;
+  answers: Record<string, number>;      // questionId -> selectedOptionIndex
+  flaggedQuestions: string[];
+  timeRemaining: number;                // seconds
+  totalTime: number;
+  score: number;
+  startTime: number | null;
+  endTime: number | null;
+  config: {
+    subject: string | 'all';
+    difficulty: 'all' | 'easy' | 'medium' | 'hard';
+    questionCount: number;
+  };
+  history: QuizAttempt[];
+}
+
+type QuizAction =
+  | { type: 'CONFIGURE'; payload: QuizConfig }
+  | { type: 'START'; payload: QuizQuestion[] }
+  | { type: 'ANSWER'; payload: { questionId: string; optionIndex: number } }
+  | { type: 'FLAG'; payload: string }
+  | { type: 'UNFLAG'; payload: string }
+  | { type: 'NEXT' }
+  | { type: 'PREVIOUS' }
+  | { type: 'TICK' }                    // Timer tick
+  | { type: 'SUBMIT' }
+  | { type: 'REVIEW' }
+  | { type: 'RETRY' }
+  | { type: 'RESET' };
+
+// Context Provider wraps quiz page
+// Persist history to localStorage
