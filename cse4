@@ -1,0 +1,18 @@
+export const metadata: Metadata = {
+  title: "Page Name | UPSC CSE Hub — Complete IAS Preparation Platform",
+  description: "Specific, keyword-rich description (150-160 chars)",
+  keywords: ["UPSC", "CSE", "IAS", "IPS", "IFS", "Civil Services", ...specific],
+  authors: [{ name: "UPSC CSE Hub" }],
+  openGraph: {
+    title: "...",
+    description: "...",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "...",
+    description: "...",
+  },
+  robots: "index, follow",
+};
