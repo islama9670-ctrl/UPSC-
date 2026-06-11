@@ -1,0 +1,26 @@
+const QUIZ_STORAGE_KEY = 'upsc-quiz-data';
+
+interface QuizData {
+  history: QuizAttempt[];
+  bestScores: Record<string, number>;  // subject -> best score
+  streak: number;                      // consecutive days
+  lastQuizDate: string;               // ISO date
+  totalQuizzesTaken: number;
+  totalQuestionsAnswered: number;
+  favoriteSubjects: string[];
+}
+
+interface QuizAttempt {
+  id: string;
+  date: string;
+  score: number;
+  totalQuestions: number;
+  correctCount: number;
+  wrongCount: number;
+  skippedCount: number;
+  subject: string;
+  difficulty: string;
+  timeTaken: number;
+  accuracy: number;
+  grade: string;
+}
