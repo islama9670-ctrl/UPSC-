@@ -1,0 +1,4 @@
+git clone https://github.com/yourname/upsc-cse-hub.git
+cd upsc-cse-hub
+npm install
+npm run dev
